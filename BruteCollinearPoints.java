@@ -4,8 +4,6 @@
  *  Last modified:     October 16, 1842
  **************************************************************************** */
 
-// Corner cases.
-// if any point in the array is null, or if the argument to the constructor contains a repeated point.
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +12,6 @@ import java.util.List;
 public class BruteCollinearPoints {
     final private List<LineSegment> segmentsList = new ArrayList<>();
 
-    // finds all line segments containing 4 points
     public BruteCollinearPoints(Point[] points) {
         checkNull(points);
         Point[] pointsCopy = points.clone();
